@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp">
+    
+    <ImageView
+        android:id="@+id/toca_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/toca_single"
+        android:transitionName="logo_img"/>
+
+    <TextView
+        android:id="@+id/text_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bine ai revenit!"
+        android:textSize="35sp"
+        android:fontFamily="@font/baloo_bhai_2_bold"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/intra_in_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intră în cont pentru a continua"
+        android:textSize="18sp"
+        android:fontFamily="@font/baloo_bhai_2_bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parola"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/parola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:fontFamily="@font/baloo_bhai_2_bold"
+            android:text="Ai uitat parola?"
+            android:id="@+id/forgotPassword"
+            android:textColor="#000000"
+            android:layout_margin="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#2F97C1"
+            android:text="Intră în cont"
+            android:textColor="#212121" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Nu ai cont? Înregistrează-te aici"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:typeface="normal" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "HIDDEN",
+    "project_id": "mateinfo-atestat",
+    "storage_bucket": "mateinfo-atestat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "HIDDEN",
+        "android_client_info": {
+          "package_name": "com.example.mate_info_atestat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "HIDDEN",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "HIDDEN"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "HIDDEN",
+              "client_type": 0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
